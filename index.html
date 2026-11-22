@@ -152,11 +152,7 @@
             background: var(--accent-light);
         }
 
-        .project-figure .project-image {
-            display: block;
-        }
-
-        .project-figure .project-screenshot {
+        .project-image.project-screenshot {
             object-fit: contain;
             background: var(--ink);
         }
@@ -165,16 +161,6 @@
             object-position: 25% 20%;
         }
 
-        .project-image-credit {
-            padding: 8px 24px 0;
-            color: var(--muted);
-            font-size: 0.8rem;
-        }
-
-        .project-image-credit a {
-            text-decoration: underline;
-        }
-        
         .project-content {
             padding: 24px;
         }
@@ -287,6 +273,17 @@
         footer a {
             color: var(--muted);
             text-decoration: underline;
+        }
+
+        .image-credits {
+            margin-top: 12px;
+            font-size: 0.8rem;
+        }
+
+        .image-credits summary {
+            width: fit-content;
+            margin: 0 auto;
+            cursor: pointer;
         }
         
         /* Responsive */
@@ -426,10 +423,7 @@
 
                 <!-- Risk Horizon -->
                 <article class="project" id="risk-horizon">
-                    <figure class="project-figure">
-                        <img src="assets/risk-horizon.webp" alt="Risk Horizon welcome screen showing the world of Alora and the player’s development goals" class="project-image project-screenshot" width="1400" height="831" loading="lazy" decoding="async">
-                        <figcaption class="project-image-credit">Screenshot from <a href="https://whale-tomato-yl39.squarespace.com/work/blog-post-title-two-znbeg">Stephen Walter’s project page</a>, used with permission.</figcaption>
-                    </figure>
+                    <img src="assets/risk-horizon.webp" alt="Risk Horizon welcome screen showing the world of Alora and the player’s development goals" class="project-image project-screenshot" width="1400" height="831" loading="lazy" decoding="async">
                     <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">Digital Game</span>
@@ -474,10 +468,7 @@
 
                 <!-- SHOCK -->
                 <article class="project" id="shock">
-                    <figure class="project-figure">
-                        <img src="assets/shock-niger-discussion.jpg" alt="Participants gathered for a focus group after playing SHOCK in Niger" class="project-image" width="563" height="233" loading="lazy" decoding="async">
-                        <figcaption class="project-image-credit">Post-game focus group in Niger. Photo © Virginie Le Masson, <a href="https://www.preventionweb.net/files/54117_11637.pdf?startDownload=true#page=18">BRACED Resilience Intel No. 8, p. 18</a>.</figcaption>
-                    </figure>
+                    <img src="assets/shock-niger-discussion.jpg" alt="Participants gathered for a focus group after playing SHOCK in Niger" class="project-image" width="563" height="233" loading="lazy" decoding="async">
                     <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">Climate</span>
@@ -495,10 +486,7 @@
 
                 <!-- UpRiver -->
                 <article class="project" id="upriver">
-                    <figure class="project-figure">
-                        <img src="assets/upriver-facilitation.jpg" alt="Moono Mutambwa holds up a weather card while facilitating UpRiver in Kazungula, Zambia" class="project-image" width="535" height="354" loading="lazy" decoding="async">
-                        <figcaption class="project-image-credit">Moono Mutambwa facilitates UpRiver in Kazungula, Zambia. Still image by <a href="https://www.climatecentre.org/2079/upriver-a-game-of-flood-preparedness-in-the-zambezi-valley/">Stephen Walter/EGL</a>.</figcaption>
-                    </figure>
+                    <img src="assets/upriver-facilitation.jpg" alt="Moono Mutambwa holds up a weather card while facilitating UpRiver in Kazungula, Zambia" class="project-image" width="535" height="354" loading="lazy" decoding="async">
                     <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">Flood Preparedness</span>
@@ -616,6 +604,12 @@
     <footer>
         <div class="container">
             <p>Wade Kimbrough • <a href="mailto:wade@wadekimbrough.com">wade@wadekimbrough.com</a> • <a href="https://linkedin.com/in/wadekimbrough/" target="_blank">LinkedIn</a></p>
+            <details class="image-credits">
+                <summary>Image credits</summary>
+                <p>Risk Horizon screenshot from <a href="https://whale-tomato-yl39.squarespace.com/work/blog-post-title-two-znbeg">Stephen Walter’s project page</a>, used with permission.</p>
+                <p>SHOCK photo © Virginie Le Masson, <a href="https://www.preventionweb.net/files/54117_11637.pdf?startDownload=true#page=18">BRACED Resilience Intel No. 8, p. 18</a>.</p>
+                <p>UpRiver still image by <a href="https://www.climatecentre.org/2079/upriver-a-game-of-flood-preparedness-in-the-zambezi-valley/">Stephen Walter/EGL</a>.</p>
+            </details>
         </div>
     </footer>
 </body>
