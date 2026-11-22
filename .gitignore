@@ -1,0 +1,6 @@
+# Track only the portfolio files and repository instructions listed here.
+*
+!/.gitignore
+!/AGENTS.md
+!/CNAME
+!/index.html
