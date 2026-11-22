@@ -2,7 +2,7 @@
 
 ## Tracked files
 
-`.gitignore` allows `index.html`, `CNAME`, `.gitignore`, and `AGENTS.md`. If the site needs a new file to display or function, add an exception for its exact path. For a nested file, also add exceptions for its parent directories.
+`.gitignore` allows `index.html`, `CNAME`, `.gitignore`, `AGENTS.md`, and the specific project images listed there. If the site needs a new file to display or function, add an exception for its exact path. For a nested file, also add exceptions for its parent directories.
 
 ## GitHub
 
